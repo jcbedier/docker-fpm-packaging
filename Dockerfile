@@ -17,3 +17,4 @@ RUN /bin/bash -l -c "rvm install 2.1.5"
 # FPM
 RUN /bin/bash -l -c "gem install fpm --no-ri --no-rdoc"
 
+CMD ["bash", "-l"]
