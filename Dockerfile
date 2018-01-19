@@ -7,6 +7,7 @@ RUN apt-get update
 RUN apt-get install -y nano wget links curl rsync bc git git-core apt-transport-https libxml2 libxml2-dev libcurl4-openssl-dev openssl sqlite3 libsqlite3-dev procps bash
 RUN apt-get install -y libreadline6-dev libyaml-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 RUN apt-get clean
+
 # RVM
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
 RUN curl -L https://get.rvm.io | bash -s stable
